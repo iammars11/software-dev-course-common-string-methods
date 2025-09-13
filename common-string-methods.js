@@ -69,23 +69,23 @@ Complete the following tasks and assign the results to the specified variables. 
 let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
 
 // 1. Searching
-let hasJavaScript; // Your code here
-let codingPosition; // Your code here
-let startsWithWelcome; // Your code here
-let endsWithToday; // Your code here
+let hasJavaScript = inputString.includes("JavaScript");
+let codingPosition = inputString.indexOf("Coding");
+let startsWithWelcome = inputString.trim().startsWith("Welcome")
+let endsWithToday = inputString.trim().endsWith("today.");
 
 // 2. Transforming
-let lowercaseString; // Your code here
-let uppercaseString; // Your code here
-let trimmedString; // Your code here
-let replacedString; // Your code here
+let lowercaseString = inputString.toLowerCase();
+let uppercaseString = inputString.toUpperCase();
+let trimmedString = inputString.trim();
+let replacedString = inputString.replace();
 
 // 3. Breaking Apart
-let wordsArray; // Your code here
+let wordsArray = inputString.trim().split(" ");
 
 // 4. Retrieving
-let firstCharacter; // Your code here
-let extractedBootcamp; // Your code here
+let firstCharacter = trimmedString.charAt(0);
+let extractedBootcamp = inputString.trim().slice(15, 23);
 
 // Log all results
 console.log({
@@ -101,3 +101,19 @@ console.log({
   firstCharacter,
   extractedBootcamp,
 });
+
+// Results of the above input
+// trimmedString: 'Welcome to the Coding Bootcamp! Learn JavaScript today.',
+  // replacedString: '  Welcome to the Coding Bootcamp! Learn JavaScript today.  ',
+  wordsArray: [
+    //'Welcome',
+    // 'to',
+    //'the',
+    //'Coding',
+    //'Bootcamp!',
+    // 'Learn',
+    // 'JavaScript',
+    // 'today.'
+// ],
+//  firstCharacter: 'W',
+// extractedBootcamp: 'Coding B'
